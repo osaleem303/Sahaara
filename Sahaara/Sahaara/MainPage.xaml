@@ -4,13 +4,57 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Sahaara.MainPage">
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Sahaara.MainPage"
+             BackgroundColor="{StaticResource AccentColor}">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="8*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout VerticalOptions="Center" Padding="10">
+            <Label Text="Welcome to" TextColor="{StaticResource AccentLight}" />
+            <Label Text="Sign in" FontSize="35" TextColor="WhiteSmoke" />
+            
+        </StackLayout>
+        
+        <Frame BackgroundColor="WhiteSmoke" CornerRadius="10"
+               Grid.Row="1">
+
+            <StackLayout Padding="10,30,10,0">
+                <Label Text="Email" />
+                <Entry />
+
+                <Label Text="Password" />
+                <Entry />
+
+
+                <Label Text="Forget Password?" HorizontalOptions="CenterAndExpand" Margin="20"/>
+
+                <Button Text="Login" BackgroundColor="{StaticResource AccentColor}"
+                        TextColor="WhiteSmoke" CornerRadius="8" x:Name="LoginButton"
+                        Clicked="LoginButton_Clicked"/>
+
+                <Label HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Dont Have an account yet?"/>
+                            <Span Text=" " />
+                            <Span Text="Sign up" FontAttributes="Bold" TextColor="{StaticResource AccentColor}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+            </StackLayout>
+            
+            
+            
+        </Frame>
+        
+
+    </Grid>
 
 </ContentPage>

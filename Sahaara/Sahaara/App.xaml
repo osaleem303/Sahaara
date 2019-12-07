@@ -6,6 +6,14 @@
              mc:Ignorable="d"
              x:Class="Sahaara.App">
     <Application.Resources>
+        <ResourceDictionary>
 
+            <!--Colors-->
+            <Color x:Key="AccentColor">#DE5B6D</Color>
+            <Color x:Key="AccentColorDark">#C35064</Color>
+            <Color x:Key="AccentLight">#D5A4AC</Color>
+            <!--Strings-->
+            <x:String x:Key="AppTitle">LikeIt</x:String>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

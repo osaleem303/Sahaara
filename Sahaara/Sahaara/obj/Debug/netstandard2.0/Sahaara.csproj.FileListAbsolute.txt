@@ -11,3 +11,5 @@ C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Xam
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\ref\Sahaara.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.pdb
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\SignupPage.xaml.g.cs

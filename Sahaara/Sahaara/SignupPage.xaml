@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Sahaara.SignupPage"
+             BackgroundColor="{StaticResource AccentColor}">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="8*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout VerticalOptions="Center" Padding="10">
+                <Label Text="Welcome to" TextColor="{StaticResource AccentLight}" />
+                <Label Text="Sign up" FontSize="35" TextColor="WhiteSmoke" />
+
+            </StackLayout>
+
+            <Frame BackgroundColor="WhiteSmoke" CornerRadius="10"
+               Grid.Row="1">
+
+                <StackLayout Padding="10,30,10,0">
+
+                    <Label Text="Name" />
+                    <Entry />
+                    
+                    <Label Text="Email" />
+                    <Entry />
+
+                    <Label Text="Password" />
+                    <Entry />
+
+                    <Label Text="NIC" />
+                    <Entry />
+
+                    <Button Text="Sign up" BackgroundColor="{StaticResource AccentColor}"
+                        TextColor="WhiteSmoke" CornerRadius="8" Margin="0,15"/>
+
+                    <!--<Label HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Dont Have an account yet?"/>
+                                <Span Text=" " />
+                                <Span Text="Sign up" FontAttributes="Bold" TextColor="{StaticResource AccentColor}" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>-->
+
+
+                </StackLayout>
+
+
+
+            </Frame>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

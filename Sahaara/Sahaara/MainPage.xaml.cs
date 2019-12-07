@@ -17,5 +17,10 @@ namespace Sahaara
         {
             InitializeComponent();
         }
+
+        private async void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SignupPage());
+        }
     }
 }
