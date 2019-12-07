@@ -1,0 +1,13 @@
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\bin\Debug\netstandard2.0\Sahaara.deps.json
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\bin\Debug\netstandard2.0\Sahaara.dll
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\bin\Debug\netstandard2.0\ref\Sahaara.dll
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\bin\Debug\netstandard2.0\Sahaara.pdb
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.csprojAssemblyReference.cache
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.AssemblyInfoInputs.cache
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.AssemblyInfo.cs
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.dll
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\ref\Sahaara.dll
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.pdb
