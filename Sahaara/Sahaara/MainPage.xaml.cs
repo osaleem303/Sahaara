@@ -18,9 +18,13 @@ namespace Sahaara
         public MainPage()
         {
             InitializeComponent();
-            DependencyService.Get<IStatusBarStyleManager>().SetDarkTheme();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing(); 
+            DependencyService.Get<IStatusBarStyleManager>().SetDarkTheme();
+        }
         private async void LoginButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new HomePage());

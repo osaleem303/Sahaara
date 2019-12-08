@@ -21,7 +21,14 @@
 
 
                 <StackLayout Orientation="Horizontal">
-                  
+
+                    <Frame HeightRequest="80" WidthRequest="80" HorizontalOptions="Start"
+                       CornerRadius="200" HasShadow="True" Padding="3">
+                        <ImageButton Source="camera" BackgroundColor="Transparent" HorizontalOptions="Center"
+                                 HeightRequest="30" WidthRequest="30" Clicked="ImageButton_Clicked_1"/>
+
+                    </Frame>
+
                     <Frame HeightRequest="80" WidthRequest="80" HorizontalOptions="EndAndExpand"
                        CornerRadius="200" HasShadow="True" Padding="3">
                         <ImageButton Source="map" BackgroundColor="Transparent" HorizontalOptions="Center"

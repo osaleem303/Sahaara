@@ -4,6 +4,8 @@ C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android\assets\mscorlib.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android\assets\Plugin.CurrentActivity.dll
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android\assets\Plugin.LocalNotifications.Abstractions.dll
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android\assets\Plugin.LocalNotifications.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android\assets\Sahaara.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android\assets\System.Core.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara.Android\obj\Debug\90\android\assets\System.dll
