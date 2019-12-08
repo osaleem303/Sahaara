@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Sahaara.PublicFeed"
+             BackgroundColor="WhiteSmoke">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <BoxView BackgroundColor="{StaticResource AccentColor}"/>
+            <Label Text="Public Feed" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium"
+                   TextColor="White"/>
+
+            <StackLayout Orientation="Horizontal" Grid.Row="1" Padding="8,10,8,5">
+                <Button Text="Country" BackgroundColor="White" BorderWidth="2" BorderColor="{StaticResource AccentColor}" CornerRadius="30" Padding="25,5"  />
+                <Button Text="City" BackgroundColor="White" BorderWidth="2" BorderColor="{StaticResource AccentColor}" CornerRadius="30" Padding="25,5" />
+                <Button Text="Time" BackgroundColor="White" BorderWidth="2" BorderColor="{StaticResource AccentColor}" CornerRadius="30" Padding="25,5" />
+            </StackLayout>
+
+            <ScrollView Grid.Row="2"  >
+                <StackLayout>
+                    <Frame HasShadow="True" CornerRadius="8" Margin="8" Padding="0,10" IsClippedToBounds="True">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" Spacing="8" Padding="8,0">
+                                <Frame HeightRequest="2" WidthRequest="2" BackgroundColor="{StaticResource AccentColor}" 
+                               CornerRadius="50"/>
+                                <Label Text="Ahsan Mustafa" TextColor="Black" FontSize="Medium" VerticalOptions="Center"/>
+                                <Label Text="2 Hrs ago"  FontSize="Micro" VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                            <Label Margin="10,5">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="#ISBhack" />
+                                        <Span Text="#CodePakistan" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Image HeightRequest="200" Source="banner" Aspect="AspectFill"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="End" Padding="8,5">
+                                <Image Source="map" HeightRequest="15"/>
+                                <Label Text="Show on Map" TextColor="{StaticResource AccentColor}"/>
+
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="True" CornerRadius="8" Margin="8" Padding="0,10" IsClippedToBounds="True">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" Spacing="8" Padding="8,0">
+                                <Frame HeightRequest="2" WidthRequest="2" BackgroundColor="{StaticResource AccentColor}" 
+                               CornerRadius="50"/>
+                                <Label Text="Azeem Iftikhar" TextColor="Black" FontSize="Medium" VerticalOptions="Center"/>
+                                <Label Text="3 Hrs ago"  FontSize="Micro" VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                            <Label Margin="10,5">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="#ISBhack" />
+                                        <Span Text="#CodePakistan" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Image HeightRequest="200" Source="banner2" Aspect="AspectFill"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="End" Padding="8,5">
+                                <Image Source="map" HeightRequest="15"/>
+                                <Label Text="Show on Map" TextColor="{StaticResource AccentColor}"/>
+
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+
+           
+
+        </Grid>
+  </ContentPage.Content>
+</ContentPage>

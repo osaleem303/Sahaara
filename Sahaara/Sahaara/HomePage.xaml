@@ -4,12 +4,67 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Sahaara.HomePage">
+             x:Class="Sahaara.HomePage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="10">
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="notificaiton" BackgroundColor="Transparent" HeightRequest="30"/>
+                <Label Text="Sahaara" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource AccentColor}"
+                       FontSize="Large" FontAttributes="Bold"/>
+                <ImageButton Source="settings" BackgroundColor="Transparent" HeightRequest="30"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="FillAndExpand" Padding="20,30" Spacing="0">
+
+
+                <StackLayout Orientation="Horizontal">
+                  
+                    <Frame HeightRequest="80" WidthRequest="80" HorizontalOptions="EndAndExpand"
+                       CornerRadius="200" HasShadow="True" Padding="3">
+                        <ImageButton Source="map" BackgroundColor="Transparent" HorizontalOptions="Center"
+                                 HeightRequest="30" WidthRequest="30" Clicked="ImageButton_Clicked_1"/>
+
+                    </Frame>
+                </StackLayout>
+
+                <Frame HeightRequest="200" WidthRequest="200" HorizontalOptions="Center"
+                       CornerRadius="200" HasShadow="True" Padding="3">
+                    <Frame HeightRequest="200" WidthRequest="200" 
+                       CornerRadius="200" HasShadow="True">
+
+                        <ImageButton Source="alert" BackgroundColor="Transparent" HorizontalOptions="Center"
+                                     HeightRequest="80"/>
+
+                    </Frame>
+                </Frame>
+
+
+
+                <StackLayout HorizontalOptions="Center" Padding="0,40,0,0">
+                    <StackLayout Orientation="Horizontal">
+                        <Switch />
+                        <Label Text="Family"  VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Switch />
+                        <Label Text="Helper"  VerticalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label Text="Status" HorizontalOptions="Center"/>
+                <Label Text="Connected" HorizontalOptions="Center" TextColor="{StaticResource AccentColor}" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <ImageButton Source="up" BackgroundColor="Transparent" HeightRequest="50" Padding="10,10,10,0" Clicked="ImageButton_Clicked">
+                <ImageButton.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="SwipeGestureRecognizer_Swiped" />
+                </ImageButton.GestureRecognizers>
+            </ImageButton>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

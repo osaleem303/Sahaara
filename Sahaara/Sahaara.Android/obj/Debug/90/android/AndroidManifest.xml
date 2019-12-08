@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.sahaara">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.zephyr.sahaara" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-  <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:label="Sahaara.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Sahaara" android:theme="@style/MainTheme" android:name="md594eeaefdb0dd729a286315d392e8b02e.MainActivity">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="Sahaara.permission.MAPS_RECEIVE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <permission android:name="Sahaara.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <application android:label="Sahaara.Android" android:name="android.support.multidex.MultiDexApplication" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Sahaara" android:theme="@style/MainTheme" android:name="md594eeaefdb0dd729a286315d392e8b02e.MainActivity" />
+    <activity android:icon="@mipmap/icon" android:label="Sahaara" android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md594eeaefdb0dd729a286315d392e8b02e.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -16,17 +22,31 @@
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.BatteryBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.EnergySaverBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.ConnectivityBroadcastReceiver" />
-    <provider android:authorities="com.companyname.sahaara.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="xamarin.essentials.fileProvider">
+    <provider android:authorities="com.zephyr.sahaara.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="xamarin.essentials.fileProvider">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xamarin_essentials_fileprovider_file_paths" />
     </provider>
     <receiver android:enabled="true" android:exported="false" android:name="md51558244f76c53b6aeda52c8a337f2c37.PowerSaveModeBroadcastReceiver" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.sahaara.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.android.MultiDexLoader" android:exported="false" android:initOrder="1999999999" android:authorities="com.zephyr.sahaara.mono.android.MultiDexLoader.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999998" android:authorities="com.zephyr.sahaara.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.sahaara" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.zephyr.sahaara" />
       </intent-filter>
     </receiver>
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+  </application>
+  <!-- Google Maps for Android v2 requires OpenGL ES v2 -->
+  <!-- Permission to receive remote notifications from Google Play Services -->
+  <!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
+  <!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+  <application android:label="Sahaara.Android">
+    <!-- Put your Google Maps V2 API Key here. -->
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD6sBuZPEosPELz6b9MLq9BvGCedwEcWYg" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <!-- Necessary for apps that target Android 9.0 or higher -->
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
   </application>
 </manifest>

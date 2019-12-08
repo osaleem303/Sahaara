@@ -1,7 +1,7 @@
 AndroidUseAapt2=True
 UseSharedRuntime=true
 UseFastDeployment=false
-EnableMultidex=False
+EnableMultidex=true
 EnableProGuard=
 GenerateOnePackagePerABI=
 BundleAssemblies=False

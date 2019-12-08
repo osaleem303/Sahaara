@@ -45,6 +45,9 @@
                             <Span Text="Sign up" FontAttributes="Bold" TextColor="{StaticResource AccentColor}" />
                         </FormattedString>
                     </Label.FormattedText>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
                 </Label>
 
 

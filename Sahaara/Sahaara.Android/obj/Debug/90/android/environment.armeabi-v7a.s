@@ -23,8 +23,8 @@
 	.section	.rodata..L.str.1,"aMS",%progbits,1
 	.type	.L.str.1, %object
 .L.str.1:
-	.asciz	"com.companyname.sahaara"
-	.size	.L.str.1, 24
+	.asciz	"com.zephyr.sahaara"
+	.size	.L.str.1, 19
 	.section	.data.application_config,"aw",%progbits
 	.type	application_config, %object
 	.p2align	2
@@ -82,7 +82,7 @@ mono_aot_mode_name:
 	.section	.rodata..L.str.8,"aMS",%progbits,1
 	.type	.L.str.8, %object
 .L.str.8:
-	.asciz	"e2e7dbd7-0f44-468e-a569-678d9d780279"
+	.asciz	"49c7280f-e1ed-4d39-a41b-84e9f128daed"
 	.size	.L.str.8, 37
 	.section	.rodata..L.str.9,"aMS",%progbits,1
 	.type	.L.str.9, %object

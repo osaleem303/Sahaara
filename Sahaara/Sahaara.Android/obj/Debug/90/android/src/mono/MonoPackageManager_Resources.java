@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "Sahaara.Android.dll" comes first in this list. */
 		"Sahaara.Android.dll",
 		"FormsViewGroup.dll",
+		"Plugin.CurrentActivity.dll",
 		"Sahaara.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
@@ -44,9 +45,15 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.ViewPager.dll",
 		"Xamarin.Essentials.dll",
 		"Xamarin.Forms.Core.dll",
+		"Xamarin.Forms.Maps.Android.dll",
+		"Xamarin.Forms.Maps.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"Xamarin.GooglePlayServices.Base.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Maps.dll",
+		"Xamarin.GooglePlayServices.Tasks.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};
