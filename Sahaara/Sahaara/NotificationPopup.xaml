@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rg:PopupPage
+    xmlns:rg="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Sahaara.NotificationPopup">
+    <Frame  CornerRadius="8" Margin="0,45,0,0"
+           VerticalOptions="FillAndExpand">
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Notifications" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <Label Text="Clear all" TextColor="{StaticResource AccentColor}"  VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,10">
+                <BoxView CornerRadius="30" HeightRequest="10" WidthRequest="10" VerticalOptions="Center" BackgroundColor="{StaticResource AccentColor}"/>
+                <Label Text="An incident occurs near your location."  HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                <Label Text="1 hr" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" />
+
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,10">
+                <BoxView CornerRadius="30" HeightRequest="10" WidthRequest="10" VerticalOptions="Center" BackgroundColor="{StaticResource AccentColor}"/>
+                <Label Text="An incident occurs near your location."  HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                <Label Text="3 hr" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" />
+
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,10">
+                <BoxView CornerRadius="30" HeightRequest="10" WidthRequest="10" VerticalOptions="Center" BackgroundColor="{StaticResource AccentColor}"/>
+                <Label Text="An incident occurs near your location."  HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                <Label Text="1 d" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" />
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,10">
+                <BoxView CornerRadius="30" HeightRequest="10" WidthRequest="10" VerticalOptions="Center" BackgroundColor="White"/>
+                <Label Text="An incident occurs near your location."  HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                <Label Text="2 d" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" />
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,10">
+                <BoxView CornerRadius="30" HeightRequest="10" WidthRequest="10" VerticalOptions="Center" BackgroundColor="White"/>
+                <Label Text="An incident occurs near your location."  HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                <Label Text="2 d" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" />
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,10">
+                <BoxView CornerRadius="30" HeightRequest="10" WidthRequest="10" VerticalOptions="Center" BackgroundColor="White"/>
+                <Label Text="An incident occurs near your location."  HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                <Label Text="3 d" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" />
+
+        </StackLayout>
+    </Frame>
+</rg:PopupPage>

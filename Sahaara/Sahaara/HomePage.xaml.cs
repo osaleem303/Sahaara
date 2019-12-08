@@ -1,4 +1,5 @@
 ﻿using Plugin.LocalNotifications;
+using Rg.Plugins.Popup.Services;
 using Sahaara.Style;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,16 @@ namespace Sahaara
         private async void ImageButton_Clicked_1(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new MapPage(), true);
+        }
+
+        private async void settingsButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SettingsPage(), true);
+        }
+
+        private async void NotificationWindow_Clicked(object sender, EventArgs e)
+        {
+            await PopupNavigation.PushAsync(new NotificationPopup());
         }
     }
 }

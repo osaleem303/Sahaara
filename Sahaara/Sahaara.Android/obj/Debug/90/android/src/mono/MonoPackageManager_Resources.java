@@ -7,6 +7,8 @@ public class MonoPackageManager_Resources {
 		"Plugin.CurrentActivity.dll",
 		"Plugin.LocalNotifications.Abstractions.dll",
 		"Plugin.LocalNotifications.dll",
+		"Rg.Plugins.Popup.dll",
+		"Rg.Plugins.Popup.Droid.dll",
 		"Sahaara.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",

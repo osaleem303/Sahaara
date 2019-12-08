@@ -4,12 +4,35 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
              x:Class="Sahaara.SettingsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Settings" FontSize="45" FontAttributes="Bold"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" Margin="25,40"/>
+
+            <Label Text="Manage Connections" Margin="10" FontAttributes="Bold" FontSize="Medium"/>
+            <StackLayout Orientation="Horizontal" Padding="8,5">
+                <Label Text="Edit Connections" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black"/>
+                <ImageButton Source="right" HeightRequest="20" BackgroundColor="Transparent"/>
+            </StackLayout>
+
+            <Label Text="Alert Settings" Margin="10,40,10,10" FontAttributes="Bold" FontSize="Medium"/>
+            <StackLayout Orientation="Horizontal" Padding="8">
+                <Label Text="Show Public Alerts" HorizontalOptions="StartAndExpand" TextColor="Black"/>
+                <Switch IsToggled="True"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="8">
+                <Label Text="Show Public Alerts" HorizontalOptions="StartAndExpand" TextColor="Black"/>
+                <Switch IsToggled="True"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="8" VerticalOptions="EndAndExpand">
+                <Button Text="Signout" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource AccentColor}" TextColor="WhiteSmoke" 
+                        CornerRadius="8"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

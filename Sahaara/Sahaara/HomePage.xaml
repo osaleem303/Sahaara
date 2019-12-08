@@ -10,10 +10,12 @@
     <ContentPage.Content>
         <StackLayout Padding="10">
             <StackLayout Orientation="Horizontal">
-                <ImageButton Source="notificaiton" BackgroundColor="Transparent" HeightRequest="30"/>
+                <ImageButton Source="notificaiton" BackgroundColor="Transparent" HeightRequest="30"
+                             x:Name="NotificationWindow" Clicked="NotificationWindow_Clicked"/>
                 <Label Text="Sahaara" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource AccentColor}"
                        FontSize="Large" FontAttributes="Bold"/>
-                <ImageButton Source="settings" BackgroundColor="Transparent" HeightRequest="30"/>
+                <ImageButton Source="settings" BackgroundColor="Transparent" HeightRequest="30"
+                             x:Name="settingsButton" Clicked="settingsButton_Clicked"/>
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand" 
@@ -53,7 +55,7 @@
                 <StackLayout HorizontalOptions="Center" Padding="0,40,0,0">
                     <StackLayout Orientation="Horizontal">
                         <Switch />
-                        <Label Text="Family"  VerticalOptions="Center"/>
+                        <Label Text="Guardians"  VerticalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Switch />
