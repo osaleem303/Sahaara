@@ -7,9 +7,12 @@ C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\App
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.AssemblyInfoInputs.cache
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.AssemblyInfo.cs
-C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\ref\Sahaara.dll
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\Sahaara.pdb
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
 C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\SignupPage.xaml.g.cs
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\PublicFeed.xaml.g.cs
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\SettingsPage.xaml.g.cs
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\MapPage.xaml.g.cs
+C:\Users\osale\source\repos\Sahaara\Sahaara\Sahaara\obj\Debug\netstandard2.0\XamlC.stamp

@@ -42,6 +42,14 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "Plugin.CurrentActivity": {
+              "target": "Package",
+              "version": "[2.1.0.4, )"
+            },
+            "Xam.Plugins.Notifier": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.1, )"
@@ -51,6 +59,10 @@
               "version": "[1.2.0, )"
             },
             "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.709249, )"
+            },
+            "Xamarin.Forms.Maps": {
               "target": "Package",
               "version": "[4.2.0.709249, )"
             }
@@ -103,11 +115,19 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Xam.Plugins.Notifier": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.2.0, )"
             },
             "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.709249, )"
+            },
+            "Xamarin.Forms.Maps": {
               "target": "Package",
               "version": "[4.2.0.709249, )"
             }
